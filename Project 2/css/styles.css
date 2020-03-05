@@ -1,0 +1,153 @@
+body {
+    background-color:whitesmoke;
+    color:black;
+    font-family: 'Open Sans Condensed', Arial;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    line-height: 1.5em;
+    }
+main {
+    background-color: white;
+    padding-top: 10px;
+  
+} 
+#portfolio {
+    padding: 15px;
+    margin: 30px;
+}
+
+header {
+    text-align: center;
+}
+nav ul {
+    padding-left: 0;
+}
+nav li  {
+    list-style-type: none;
+    padding: 10px;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+}
+.picture-header {
+width: 90%;
+padding: 30px
+
+} 
+.img-portfolio {
+width: 90%;
+}
+/*Basic Footer styles */
+
+
+.namefooter
+{
+float: left;
+}
+.footerlink
+{
+float: right;
+}
+
+footer nav li a  {
+    display: none;
+    
+}
+.group::after {
+    display: table;
+    content:"";
+    clear:both;
+}
+
+
+/*Media query for Tablet */
+@media (min-width: 768px) {
+header {
+        text-align: center;
+    }
+
+nav li {
+        display: inline-block;
+        
+    }
+nav li a {
+        background-color: whitesmoke;
+    }
+ #biointro{
+        position: relative;
+    }
+.picture-header {
+        float: right;
+        width: 60%;
+        height: 20%;
+    }
+.bio {
+        float: left;
+        width: 30%;
+        position: absolute;
+        top: 50px;
+    }
+
+#portfolio {
+    float: left;
+}
+.description-type {
+    float: left;
+    width: 50%;
+}
+footer nav {
+    float: right;
+}
+.footerlink {
+    display: none;
+}
+footer nav li a  {
+    display: inline-block;
+    
+
+}
+}
+
+
+
+/*Media query for Desktop*/
+@media (min-width: 1024px) {
+.name {
+    float: left;
+}
+nav {
+    float: right;
+}
+
+#portfolio {
+  display: flex;
+  width: 100%;
+flex-direction:row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+
+}
+
+
+.description-type {
+    width: 30%;
+}
+.headerportfolio{
+    text-align: center;
+}
+.footerlink {
+    display: none;
+}
+footer nav li a  {
+    display: inline-block;
+    
+}
+
+}
